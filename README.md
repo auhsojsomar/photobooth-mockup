@@ -1,1 +1,1 @@
-Extract thr files
+Extract the files
