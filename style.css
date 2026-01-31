@@ -1,0 +1,365 @@
+:root {
+  --primary-color: #03594d;
+  --secondary-color: #c956d7;
+  --foreground-color: #f9f8f4;
+  --secondary-hover-color: #2a9d90;
+}
+
+@font-face {
+  font-family: "SF Pro Medium";
+  src: url("./assets/fonts/SF-Pro-Display-Medium.otf") format("opentype");
+  font-weight: 510;
+}
+
+@font-face {
+  font-family: "SF Pro Bold";
+  src: url("./assets/fonts/SF-Pro-Display-Bold.otf") format("opentype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Anton Regular";
+  src: url("./assets/fonts/Anton-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Anton Regular", sans-serif;
+  width: 1280px;
+  margin: auto;
+  color: var(--primary-color);
+  background-color: var(--foreground-color);
+}
+
+.sf-pro-medium {
+  font-family: "SF Pro Medium", sans-serif;
+}
+
+.sf-pro-bold {
+  font-family: "SF Pro Bold", sans-serif;
+}
+
+.buttons {
+  width: 200px;
+  height: 50px;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.primary-buttons {
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+  background-color: transparent;
+}
+
+.primary-buttons:hover {
+  color: #fff;
+  background-color: var(--secondary-color);
+}
+
+.secondary-buttons {
+  border: 1px solid transparent;
+  color: #fff;
+  background-color: var(--secondary-color);
+}
+
+.secondary-buttons:hover {
+  color: #fff;
+  background-color: var(--secondary-hover-color);
+}
+
+.link-button {
+  font-size: 16px;
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.navbar {
+  position: absolute;
+  top: 11px;
+  width: 1240px;
+  height: 47.6px;
+  border-radius: 15px;
+  padding: 8px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero {
+  height: 832px;
+  position: relative;
+}
+
+.hero-body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hero-info {
+  width: 597px;
+  height: 328px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero-title {
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: -0.02em;
+}
+
+.hero-description {
+  width: 465px;
+  font-size: 25px;
+  line-height: 35px;
+  letter-spacing: -0.03em;
+}
+
+.hero-banner {
+  width: 472.35px;
+  height: 658.57px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+}
+
+.hero-footer {
+  width: 100%;
+  padding: 42px;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.book-today-link {
+  width: 164px;
+  height: 19px;
+}
+
+.arrow-right-icon {
+  width: 65px;
+}
+
+.socials-link {
+  width: 110px;
+  display: flex;
+  justify-content: space-between;
+  line-height: 100%;
+  letter-spacing: 0.03em;
+}
+
+.booth-showcase {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 450px;
+}
+
+.booth-showcase-text {
+  width: 528px;
+  height: 265px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.booth-showcase-title {
+  color: var(--secondary-color);
+  font-size: 48px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+}
+
+.booth-showcase-tagline {
+  font-size: 25px;
+  line-height: 35px;
+  letter-spacing: 0.03em;
+}
+
+.booth-showcase-description {
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+}
+
+.mix-match {
+  width: 1100px;
+  height: 417px;
+  padding: 32px 0;
+  margin: 56px auto;
+  text-align: center;
+}
+
+.mix-match-info {
+  height: 166px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.mix-match-title {
+  font-size: 40px;
+  line-height: 42.5px;
+  letter-spacing: 0.02em;
+}
+
+.mix-match-tagline,
+.mix-match-description {
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 0.03em;
+}
+
+.mix-match-description {
+  width: 1002px;
+}
+
+.mix-match-feature {
+  width: 966px;
+  margin: 48px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mix-match-feature-item {
+  width: 300px;
+  height: 131px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mix-match-feature-icon {
+  width: 65px;
+  height: 65px;
+}
+
+.booth-gallery {
+  margin: auto;
+  width: 1100px;
+  height: 1082px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.booth-gallery-info {
+  height: 117px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.booth-gallery-title {
+  font-size: 40px;
+  line-height: 42.5px;
+  letter-spacing: 0.02em;
+}
+
+.booth-gallery-description {
+  width: 764px;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 0.03em;
+}
+
+.booth-gallery-images {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.booth-gallery-image-small-1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.booth-gallery-image-small-2 {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.booth-gallery-image-rectangle {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+}
+
+.booth-gallery-image-small-3 {
+  grid-column: 4;
+  grid-row: 1;
+}
+
+.booth-gallery-image-small-4 {
+  grid-column: 4;
+  grid-row: 2;
+}
+
+.booth-gallery-image-large {
+  grid-column: 1 / span 2;
+  grid-row: 2 / span 2;
+}
+
+.booth-gallery-image-small-5 {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+.booth-gallery-image-small-6 {
+  grid-column: 4;
+  grid-row: 3;
+}
+
+.booth-gallery-link {
+  font-size: 16px;
+  line-height: 100%;
+  margin: auto;
+}
+
+.book {
+  width: 698px;
+  height: 191px;
+  margin: 48px auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.book-title {
+  font-size: 40px;
+  line-height: 42.5px;
+  letter-spacing: 0.02em;
+}
+
+.book-description {
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 0.03em;
+}
+
+.book-actions {
+  display: flex;
+  gap: 16px;
+}
